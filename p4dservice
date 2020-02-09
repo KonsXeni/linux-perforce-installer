@@ -1,5 +1,5 @@
-#! /bin/sh
-# /etc/init.d/p4dservice
+#!/bin/sh
+#/etc/init.d/p4dservice
 
 ### BEGIN INIT INFO
 # Provides: p4dservice
@@ -43,7 +43,6 @@ case "$1" in
   echo "Usage: /etc/init.d/p4dperforce (start|stop|restart)"
   exit 1
   ;;
-  
 esac
 
 exit 0
