@@ -3,8 +3,8 @@
 
 ### BEGIN INIT INFO
 # Provides: p4dservice
-#Required-Start:
-#Required-Stop:
+# Required-Start: $all
+# Required-Stop:
 # Default-Start: 2 3 4 5
 # Default-Stop: 0 1 6
 # Short-Description: Start and/or Stop p4d
