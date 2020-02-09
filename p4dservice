@@ -1,4 +1,5 @@
-#!/bin/bash
+#! /bin/sh
+# /etc/init.d/p4dservice
 
 ### BEGIN INIT INFO
 # Provides: p4dservice
@@ -8,7 +9,7 @@
 # Should-Stop:
 # Default-Start: 2 3 4 5
 # Default-Stop: 0 1 6
-# Short-Description: Start and Stop
+# Short-Description: Start and/or Stop p4d.
 # Description:
 ### END INIT INFO
 
@@ -30,22 +31,18 @@ case "$1" in
     log_action_begin_msg "Starting Perforce Server"
     daemon -u $p4user -- $p4start;
     ;;
-
   stop)
     log_action_begin_msg "Stopping Perforce Server"
     daemon -u $p4user -- $p4stop;
     ;;
-
   restart)
     stop
     start
     ;;
-
 *)
-  echo "Usage: /etc/init.d/perforce (start|stop|restart)"
+  echo "Usage: /etc/init.d/p4dperforce (start|stop|restart)"
   exit 1
   ;;
-
 esac
 
 exit 0
