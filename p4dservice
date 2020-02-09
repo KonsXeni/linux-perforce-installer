@@ -2,15 +2,15 @@
 #/etc/init.d/p4dservice
 
 ### BEGIN INIT INFO
-# Provides: p4dservice
-# Required-Start:
-# Required-Stop:
-# Should-Start:
-# Should-Stop:
-# Default-Start: 2 3 4 5
-# Default-Stop: 0 1 6
-# Short-Description: Start and/or Stop p4d
-# Description:
+#Provides: p4dservice
+#Required-Start:
+#Required-Stop:
+#Should-Start:
+#Should-Stop:
+#Default-Start: 2 3 4 5
+#Default-Stop: 0 1 6
+#Short-Description: Start and/or Stop p4d
+#Description:
 ### END INIT INFO
 
 export P4JOURNAL=/var/log/perforce/journal
