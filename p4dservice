@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 #/etc/init.d/p4dservice
 
 ### BEGIN INIT INFO
